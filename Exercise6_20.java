@@ -4,10 +4,11 @@ public class Exercise6_20 {
 	
 	public static int[] shuffle(int[] original){
 		int[] shuffle = original;
+		System.out.println(original.length);
 		int tmp;
 		int random;
 		for(int i=0; i<100;i++){
-			random=(int)(Math.random()*8);
+			random=(int)(Math.random()*8+1);
 			tmp=shuffle[random];
 			shuffle[random]=shuffle[9-random];
 			shuffle[9-random]=tmp;
